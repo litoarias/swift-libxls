@@ -1,0 +1,16 @@
+# Build artifacts from the libxls compilation script
+build-libxls/libxls/
+build-libxls/ios/
+build-libxls/sim/
+build-libxls/*.a
+build-libxls/*.o
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+.build/
+
+# macOS
+.DS_Store
