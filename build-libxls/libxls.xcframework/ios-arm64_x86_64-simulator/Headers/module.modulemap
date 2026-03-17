@@ -1,4 +1,0 @@
-module libxls {
-    header "xls.h"
-    export *
-}

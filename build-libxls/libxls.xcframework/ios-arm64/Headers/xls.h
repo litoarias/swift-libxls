@@ -41,6 +41,7 @@ extern "C" {
 
 #include "libxls/xlstypes.h"
 #include "libxls/xlsstruct.h"
+#include "libxls/xlstool.h"
 
 typedef enum {
     LIBXLS_OK,
