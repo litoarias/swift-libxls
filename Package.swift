@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "LibXLS",
     platforms: [
-        .iOS(.v13),
+        .iOS(.v18),
     ],
     products: [
         .library(
