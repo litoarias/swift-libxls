@@ -19,7 +19,10 @@ let package = Package(
         ),
         .target(
             name: "LibXLS",
-            dependencies: ["libxls"]
+            dependencies: ["libxls"],
+            linkerSettings: [
+                .linkedLibrary("iconv")
+            ]
         ),
     ]
 )
