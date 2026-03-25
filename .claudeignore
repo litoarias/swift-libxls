@@ -1,0 +1,16 @@
+.build/
+DerivedData/
+*.xcframework
+build/
+*.xcuserstate
+xcuserdata/
+*.pbxproj
+*.ipa
+*.dSYM.zip
+*.dSYM
+Pods/
+.swiftpm/
+SourcePackages/
+.DS_Store
+*.xcconfig
+Secrets/
