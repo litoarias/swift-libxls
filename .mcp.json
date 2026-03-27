@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "cupertino": {
+      "type": "stdio",
+      "command": "/opt/homebrew/bin/cupertino",
+      "args": [],
+      "env": {}
+    }
+  }
+}
