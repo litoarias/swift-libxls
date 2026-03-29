@@ -1,5 +1,6 @@
 
 ## Git
 - Author: Hipolito Arias <lito.arias.cervero@gmail.com>
-- Never add Co-Authored-By lines mentioning Claude in commit messages
+- NEVER include "Co-Authored-By" lines referencing Claude, Anthropic, or any AI assistant in commit messages
+- NEVER include any AI attribution or signature in commits, PRs, or code comments
 
