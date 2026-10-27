@@ -94,6 +94,7 @@ type_name:
 custom_rules:
   domain_imports_foundation_only:
     included: ".*/Domain/.*\\.swift"
+    excluded: ".*Tests/.*"
     name: "Domain imports Foundation only (IOS-ARCH-001)"
     regex: "(?m)^import\\s+(?!Foundation\\s*$|Observation\\s*$)\\w+"
     message: "Domain must stay independent from UI, persistence, Data, and SDKs."
@@ -101,6 +102,7 @@ custom_rules:
 
   dto_outside_data:
     included: ".*/(Domain|Presentation)/.*\\.swift"
+    excluded: ".*Tests/.*"
     name: "DTO outside Data (IOS-STRUCT-004)"
     regex: "\\b[A-Z][A-Za-z0-9]*DTOs?\\b"
     message: "Map DTOs to domain models before values leave Data."
@@ -108,6 +110,7 @@ custom_rules:
 
   direct_url_session:
     included: ".*/(Presentation|Domain|Data/Repositories)/.*\\.swift"
+    excluded: ".*Tests/.*"
     name: "Direct URLSession (IOS-NET-001)"
     regex: "\\bURLSession\\b"
     message: "Use the project's shared HTTP client."
@@ -115,6 +118,7 @@ custom_rules:
 
   main_actor_outside_ui:
     included: ".*/(Domain|Data)/.*\\.swift"
+    excluded: ".*Tests/.*"
     name: "MainActor outside UI (IOS-CONC-004)"
     regex: "@MainActor"
     message: "Do not isolate non-UI layers to MainActor to silence diagnostics. Document real exceptions with swiftlint:disable:next."
