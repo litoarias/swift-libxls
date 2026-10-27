@@ -25,10 +25,15 @@ write it.
 - **IOS-TEST-005 (SHOULD)** Test doubles are hand-written (`Stub`, `Spy`,
   `Fake`) and live in the test target next to the tests that use them, or in
   a shared `TestDoubles` folder.
-- **IOS-TEST-006 (SHOULD)** Declarative UI, previews, and the composition root
-  are excluded from coverage reports; validate them with UI or snapshot tests
-  when the risk justifies it. Coverage is a map, never a target
-  (CORE-VER-006).
+- **IOS-TEST-006 (MUST)** Coverage counts only view models, Domain, and Data
+  (CORE-VER-007). SwiftUI views, previews, styles, the composition root
+  (`App`, dependency factories), widgets and complications UI, and debug or
+  QA screens stay out. Xcode cannot exclude files inside a target, so filter
+  the `xcrun xccov view --report` output by path (for example
+  `*/Domain/*`, `*/Data/*`, `*ViewModel*.swift`) and compute the totals from
+  those files only; the project wiki keeps the exact command. Validate views
+  with UI or snapshot tests when the risk justifies it. Coverage is a map,
+  never a target (CORE-VER-006).
 - **IOS-TEST-007 (MUST)** Tests are deterministic: inject clocks, calendars,
   locales, and UUID generators instead of using `Date()` or `Locale.current`
   directly in tested code.

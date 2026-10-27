@@ -18,3 +18,9 @@
 - **CORE-VER-006 (MUST)** Coverage is a map of what is untested, never a
   target. Do not set or chase coverage percentages; use the report to find
   important behavior without tests (CORE-ESS-027).
+- **CORE-VER-007 (MUST)** Coverage counts only logic: presentation logic
+  (view models, presenters, state holders) and everything below it (domain
+  and data). Views, previews, styles, assets, generated code, debug screens,
+  and the composition root are left out of the number and the report. The
+  project wiki states how the report is filtered. *Why:* UI declarations
+  dilute the report until it no longer shows which logic lacks tests.

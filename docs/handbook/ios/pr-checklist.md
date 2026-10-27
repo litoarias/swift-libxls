@@ -16,7 +16,8 @@
       (IOS-A11Y-001/002, IOS-DS-002).
 - [ ] Tests use Swift Testing and protect the changed behavior; each one
       would fail if that behavior broke, none exists only for coverage
-      (IOS-TEST-001/002/009).
+      (IOS-TEST-001/002/009). Coverage, if reported, counts only view
+      models, Domain, and Data; views are out (IOS-TEST-006).
 - [ ] SwiftLint passes; there are no new warnings (IOS-QUAL-002/003).
 - [ ] If the user declines UMP, ATT is never shown (IOS-ADS-006).
 - [ ] Privacy manifest and policy are updated if data collection changed
