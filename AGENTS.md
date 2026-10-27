@@ -3,7 +3,7 @@
 <!-- handbook:start -->
 ## Engineering Handbook
 
-This project follows the shared engineering handbook (version `1.1.0+2e9a14c`),
+This project follows the shared engineering handbook (version `1.3.0+3d06b16`),
 synced into `docs/handbook/`. Its rules are mandatory. Project-specific facts and
 deliberate exceptions live in `docs/wiki/` (see `docs/wiki/overrides.md`)
 and in this file outside this block, and they take precedence.

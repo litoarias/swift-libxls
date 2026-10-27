@@ -51,3 +51,9 @@ ID, so reviews and agents can cite it, and a level:
   ([Verification](verification.md)).
 - **CORE-ESS-026 (SHOULD)** Keep changes scoped to the request. Note follow-ups
   instead of doing them silently.
+- **CORE-ESS-027 (MUST)** Every test must earn its place: it protects a
+  business rule, an edge case, an error path, a state transition, or a bug
+  that already happened, and it would fail if that behavior broke. Never write
+  tests to raise a coverage number. *Why:* tests that only execute code cost
+  maintenance, slow every change, and give false confidence; a smaller suite
+  that catches real regressions is worth more than a large one that cannot.

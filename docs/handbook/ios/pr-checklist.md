@@ -14,7 +14,10 @@
 - [ ] Strings are in the catalog for every shipped language (IOS-L10N-001/002).
 - [ ] Accessibility labels, Dynamic Type, and dark mode are checked
       (IOS-A11Y-001/002, IOS-DS-002).
-- [ ] Tests use Swift Testing and cover the change (IOS-TEST-001/002).
+- [ ] Tests use Swift Testing and protect the changed behavior; each one
+      would fail if that behavior broke, none exists only for coverage
+      (IOS-TEST-001/002/009).
 - [ ] SwiftLint passes; there are no new warnings (IOS-QUAL-002/003).
+- [ ] If the user declines UMP, ATT is never shown (IOS-ADS-006).
 - [ ] Privacy manifest and policy are updated if data collection changed
       (IOS-ADS-004).

@@ -15,3 +15,6 @@
   smallest supported size.
 - **CORE-VER-005 (SHOULD)** Prefer the IDE integration (Xcode MCP) when
   available; otherwise use the command line with the project's scheme.
+- **CORE-VER-006 (MUST)** Coverage is a map of what is untested, never a
+  target. Do not set or chase coverage percentages; use the report to find
+  important behavior without tests (CORE-ESS-027).
