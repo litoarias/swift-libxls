@@ -89,6 +89,11 @@ identifier_name:
 
 type_name:
   min_length: 3
+  # The naming table asks for <Qualifier><Name>Repository / <Feature>ViewModelContract
+  # (IOS-NAME-*), which often passes SwiftLint's default 40 characters.
+  max_length:
+    warning: 50
+    error: 60
   excluded: [ID]
 
 custom_rules:
