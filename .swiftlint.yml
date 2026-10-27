@@ -1,0 +1,7 @@
+# Inherits the shared engineering-handbook base (IOS-QUAL-001).
+# Add project-specific rules below; change shared rules in the handbook.
+
+parent_config: docs/handbook/ios/tooling/swiftlint.base.yml
+
+included:
+  - "Sources"
