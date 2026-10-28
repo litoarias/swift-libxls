@@ -10,6 +10,9 @@
 - [ ] No secrets, tokens, or personal data in code, logs, or public content
       (CORE-SEC-001/002, CORE-PRIV-001).
 - [ ] No AI attribution; commit author is correct (CORE-GIT-001/002).
+- [ ] Release PRs: branch `release/X.Y.Z` matches the app version, merged into
+      `main` only after the store published it, tagged `vX.Y.Z`
+      (CORE-GIT-008, CORE-GIT-010 to 013).
 - [ ] Project wiki updated when setup, integrations, or decisions changed.
 
 Add the platform checklist (`ios/pr-checklist.md` or `web/pr-checklist.md`).

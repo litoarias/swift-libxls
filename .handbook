@@ -1,5 +1,6 @@
-# Managed by engineering-handbook. Edit only 'layers' and 'path', then run: handbook sync
+# Managed by engineering-handbook. Edit only 'layers', 'path' and 'apps', then run: handbook sync
 layers=core ios
 path=docs/handbook
-version=1.4.2+c712fb3
-checksum=989dfc9bbaff1a86
+apps=
+version=1.5.0+4519889
+checksum=b92b1b6888e58627
