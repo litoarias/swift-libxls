@@ -2,5 +2,5 @@
 layers=core ios
 path=docs/handbook
 apps=
-version=1.5.0+4519889
-checksum=b92b1b6888e58627
+version=1.6.0+a8ef438
+checksum=957a9b8fab901af9
