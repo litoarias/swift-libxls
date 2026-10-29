@@ -59,3 +59,9 @@ central repository checks each rule below and reports deviations as alerts.
   release date, ratings, minimum OS) is never maintained by hand in a tracker.
   It is written by `app-status`. Trackers keep only decisions, notes, and
   tasks.
+- **CORE-GIT-017 (MUST)** A commit that resolves a task of the project tracker
+  cites its id in the body with a closing keyword: `Fixes TASK-12` (also
+  `Closes`, `Resuelve`, `Cierra`). When it reaches the default branch, the
+  daily `app-status` run marks the task done and links the commit. Mentioning
+  an id without the keyword does not close it. *Why:* the tracker stays true
+  without anyone remembering to update it.

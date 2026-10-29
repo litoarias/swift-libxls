@@ -13,6 +13,7 @@
 - [ ] Release PRs: branch `release/X.Y.Z` matches the app version, merged into
       `main` only after the store published it, tagged `vX.Y.Z`
       (CORE-GIT-008, CORE-GIT-010 to 013).
+- [ ] Commits that resolve a tracker task cite it: `Fixes TASK-n` (CORE-GIT-017).
 - [ ] Project wiki updated when setup, integrations, or decisions changed.
 
 Add the platform checklist (`ios/pr-checklist.md` or `web/pr-checklist.md`).
