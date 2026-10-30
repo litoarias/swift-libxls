@@ -15,5 +15,14 @@
 - **IOS-LOG-002 (MUST)** Mark dynamic values with the right privacy
   (`\(value, privacy: .private)` by default for anything user-related).
 - **IOS-LOG-003 (SHOULD)** Non-fatal errors that matter in production are
-  reported to the crash reporter (Crashlytics) with context, without personal
-  data.
+  reported to the crash reporter (Crashlytics, IOS-LOG-004) with context,
+  without personal data.
+- **IOS-LOG-004 (MUST)** Every app published in the App Store ships a crash
+  reporter, and it is Firebase Crashlytics (free, no event cap). It starts at
+  launch with `FirebaseApp.configure()`, its collection is off in Debug
+  builds, Release builds upload their dSYMs, the App Store privacy label
+  declares Crash Data, and the privacy policy names Crashlytics (IOS-ADS-004,
+  CORE-PRIV-004). Steps: [Recipe: Add Crashlytics](recipes/add-crashlytics.md).
+  *Why:* without it, crashes only reach the Xcode Organizer from users who
+  share analytics with developers, days later and without context. An app
+  with no crash reporter ships blind.

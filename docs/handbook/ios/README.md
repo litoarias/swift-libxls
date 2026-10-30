@@ -20,6 +20,7 @@ macOS, widgets, and extensions). Read the page that matches the task.
 | [Code Quality](code-quality.md) | SwiftLint, warnings, build settings. |
 | [Recipe: Add A Feature](recipes/add-a-feature.md) | Building a new screen end to end. |
 | [Recipe: Add A Data Capability](recipes/add-a-data-capability.md) | A repository, SDK wrapper, or store without its own screen. |
+| [Recipe: Add Crashlytics](recipes/add-crashlytics.md) | Before an app's first store release, or when it has no crash reporter. |
 | [PR Checklist](pr-checklist.md) | Before opening or approving a PR. |
 
 Baseline for new projects: latest stable Xcode, Swift 6 language mode,
