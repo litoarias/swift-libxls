@@ -11,6 +11,8 @@
       (IOS-CONC-001/006).
 - [ ] Technical errors are translated; nothing is silently swallowed
       (IOS-ERR-002/003).
+- [ ] A store app has Crashlytics with dSYM upload, off in Debug, and its
+      privacy label and policy declare crash data (IOS-LOG-004).
 - [ ] Strings are in the catalog for every shipped language (IOS-L10N-001/002).
 - [ ] Accessibility labels, Dynamic Type, and dark mode are checked
       (IOS-A11Y-001/002, IOS-DS-002).
